@@ -1,0 +1,30 @@
+# Feature: Login & Authentication
+
+## Feature Description
+This feature enables users to securely log into their SwiftPay accounts using their credentials. It supports authentication mechanisms such as password verification and two-factor authentication (2FA).
+
+## Functional Goals
+- Secure login using email/phone + password
+- Support biometric login (optional, future update)
+- Integrate optional two-factor authentication
+- Prevent brute-force login attempts
+- Logout functionality
+
+## Business Value
+Security is essential in financial applications. A reliable login system protects user accounts, builds trust, and ensures compliance with financial regulations.
+
+## User Story
+As a user, I want to log into my account securely so that I can access my finances without fear of fraud or unauthorized access.
+
+## Acceptance Criteria
+- ✅ Users must verify identity before accessing any account data
+- ✅ Login screen with "forgot password" and "create account" options
+- ✅ Multiple failed attempts trigger temporary lockout
+- ✅ Successful logins are logged in the system
+- ✅ Option to log out anytime
+
+## Security Notes
+- Encrypt passwords using industry standards (e.g., bcrypt)
+- Use HTTPS for all login-related communication
+- Store session tokens securely
+- Log and monitor login attempts for suspicious activity
