@@ -1,0 +1,99 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Money Transfer Activity Diagram" id="moneyTransfer">
+    <mxGraphModel dx="1713" dy="1178" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ok1qKWAp05J3iXtO-DTi-4" value="user lane:" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="140" width="350" height="970" as="geometry" />
+        </mxCell>
+        <mxCell id="enterDetails" value="Enter Recipient &amp; Amount" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ok1qKWAp05J3iXtO-DTi-4" vertex="1">
+          <mxGeometry x="50" y="280" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="transferPage" value="Open Transfer Page" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ok1qKWAp05J3iXtO-DTi-4" vertex="1">
+          <mxGeometry x="80" y="190" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" parent="Ok1qKWAp05J3iXtO-DTi-4" source="transferPage" target="enterDetails" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="login" value="Login" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ok1qKWAp05J3iXtO-DTi-4" vertex="1">
+          <mxGeometry x="100" y="120" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" parent="Ok1qKWAp05J3iXtO-DTi-4" source="login" target="transferPage" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="start" value="start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" parent="Ok1qKWAp05J3iXtO-DTi-4" vertex="1">
+          <mxGeometry x="155" y="40" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" parent="Ok1qKWAp05J3iXtO-DTi-4" source="start" target="login" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="successMsg" value="Show Success Message" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ok1qKWAp05J3iXtO-DTi-4" vertex="1">
+          <mxGeometry x="90" y="810" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ok1qKWAp05J3iXtO-DTi-5" value="system lane:" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="140" width="340" height="970" as="geometry" />
+        </mxCell>
+        <mxCell id="Ok1qKWAp05J3iXtO-DTi-3" value="end" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="Ok1qKWAp05J3iXtO-DTi-5">
+          <mxGeometry x="140" y="880" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="notify" value="Send Notification" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ok1qKWAp05J3iXtO-DTi-5" vertex="1">
+          <mxGeometry x="60" y="730" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="saveRecord" value="Save Transaction Record" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ok1qKWAp05J3iXtO-DTi-5" vertex="1">
+          <mxGeometry x="40" y="640" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" parent="Ok1qKWAp05J3iXtO-DTi-5" source="saveRecord" target="notify" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="deductAmount" value="Deduct Amount" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ok1qKWAp05J3iXtO-DTi-5" vertex="1">
+          <mxGeometry x="40" y="550" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" parent="Ok1qKWAp05J3iXtO-DTi-5" source="deductAmount" target="saveRecord" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="validateBalance" value="Validate Balance" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ok1qKWAp05J3iXtO-DTi-5" vertex="1">
+          <mxGeometry x="110" y="240" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="checkRecipient" value="Check Recipient Details" style="rhombus;whiteSpace=wrap;html=1;" parent="Ok1qKWAp05J3iXtO-DTi-5" vertex="1">
+          <mxGeometry x="60" y="380" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="valid" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" parent="Ok1qKWAp05J3iXtO-DTi-5" source="checkRecipient" target="deductAmount" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" parent="Ok1qKWAp05J3iXtO-DTi-5" source="validateBalance" target="checkRecipient" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ok1qKWAp05J3iXtO-DTi-14" value="show invalid recipient" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Ok1qKWAp05J3iXtO-DTi-5">
+          <mxGeometry x="210" y="490" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ok1qKWAp05J3iXtO-DTi-13" value="invalid" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="Ok1qKWAp05J3iXtO-DTi-5" source="checkRecipient" target="Ok1qKWAp05J3iXtO-DTi-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-30" y="350" as="sourcePoint" />
+            <mxPoint x="50" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ok1qKWAp05J3iXtO-DTi-18" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Ok1qKWAp05J3iXtO-DTi-5" source="Ok1qKWAp05J3iXtO-DTi-14" target="Ok1qKWAp05J3iXtO-DTi-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="740" as="sourcePoint" />
+            <mxPoint x="180" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" parent="1" source="enterDetails" target="validateBalance" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" parent="1" source="notify" target="successMsg" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="successMsg" target="Ok1qKWAp05J3iXtO-DTi-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="399" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ok1qKWAp05J3iXtO-DTi-19" value="activity diagram for money transfer" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=5" vertex="1" parent="1">
+          <mxGeometry x="160" y="60" width="470" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
